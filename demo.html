@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+html,body{height: 100%;width: 100%;}
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
+body{font-size:12px;font-family:'微软雅黑';background:#fff;height: 100%;width: 100%;background: url(images/bj4.jpg);background-size: 100% 100%;overflow: hidden;} 
+a{color:#2d374b;text-decoration:none} 
+a:hover{color:#cd0200;text-decoration:underline} 
+em{font-style:normal} 
+li{list-style:none} 
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0} 
+p{word-wrap:break-word}
+#content { 
+	width: 100%;
+	height: 100%; 
+	top: 0px;
+	overflow: hidden; 
+	position: absolute; 
+}
+#snowflake { 
+	width: 100%; 
+	height: 100%; 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	overflow: hidden; 
+}
+.snowRoll { 
+	position: absolute; 
+	opacity: 0; 
+	-webkit-animation-name: mysnow; 
+	-webkit-animation-duration: 20s; 
+	-moz-animation-name: mysnow; 
+	-moz-animation-duration: 20s; 
+	height: 80px; 
+}
+@-webkit-keyframes mysnow {  
+	0% {
+	 bottom: 100%;
+	}
+	 50% {
+	 -webkit-transform: rotate(1080deg);
+	}
+	 100% {
+	 -webkit-transform: rotate(0deg) translate3d(50px, 50px, 50px);
+	}
+}
+@-moz-keyframes mysnow {  
+	0% {
+	 bottom: 100%;
+	}
+	 50% {
+	 -moz-transform: rotate(1080deg);
+	}
+	 100% {
+	 -moz-transform: rotate(0deg) translate3d(50px, 50px, 50px);
+	}
+}
+
+@font-face {
+	font-family: "love";
+	src: url("fonts/love.ttf");
+}
+
+</style>
+<link rel="stylesheet" href="css/promise/promise.css" />
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/dist/animatext.min.js"></script>
+	
+	<div id="promise_image">
+		<!--粉色初识-->
+		<div id="pink">
+			<div id="pink_title">粉色的花瓣</div>
+			<div id="pink_yt"></div>
+			<div id="pink_like">初<br />识</div>
+			<div id="pink_xlm"></div>
+			<div id="pink_content1">我对她一见钟情</div>
+			<div id="pink_content2">她对我无限崇拜</div>
+		</div>
+		<!--//粉色初识-->
+		
+		<!--绿色的叶子-->
+		<div id="green">
+			<div id="green_title">绿色的叶子</div>
+			<div id="green_xlm"></div>
+			<div id="green_like">萌<br />芽</div>
+			<div id="green_yt"></div>
+			<div id="green_content">偶然的开始</div>
+		</div>
+		<!--//绿色的叶子-->
+		
+		<!--蓝色的花瓣-->
+		<div id="blue">
+			<div id="blue_title">蓝色的花瓣</div>
+			<div id="blue_yt">
+				<div id="blue_ytA">
+					<div id="blue_yt1"></div>
+				    <div id="blue_yt1_content">好想和她聊天</div>
+				</div>
+				<div id="blue_yt2"></div>
+			</div>
+			<div id="blue_like">相<br />约</div>
+			<div id="blue_xlm">
+				<div id="blue_xlm1"></div>
+				<div id="blue_xlm2"></div>
+			</div>
+			<div id="blue_content">
+				<div id="blue_contentA">
+					<div id="blue_content1">&nbsp;</div>
+				    <div id="blue_content2">学长,给我智慧吧</div>
+				</div>
+				<div id="blue_contentB">
+					<div id="blue_content3">追你成功!</div>
+				    <div id="blue_content4">考研成功!</div>
+				</div>
+				<div id="blue_contentC">
+					<div id="blue_content5">许下了约定</div>
+				</div>
+				
+			</div>
+		</div>
+		<!--//蓝色的花瓣-->
+		
+		
+		
+	</div>
+	
+	
+	
+	
+	<script type="text/javascript" src="js/promise/promise.js"></script>
+	
+	
+	 <div id='content'>
+        <!-- 飘花 -->
+        <div id="snowflake"></div>
+    </div>
+	
+    
+    <script type="text/javascript" src="js/jquery.transit.js"></script>
+	<script type="text/javascript">
+	$(function() {
+        var snowflakeURl = []
+        //绿叶，代表我对她一见钟情，她对我无限崇拜
+        var pinkList=[]
+        for (var i=1;i<=33;i++) {
+        	var image_path='./images/pink/pink'+i+'.png'
+        	pinkList.push(image_path)
+        }
+        //绿叶，代表我对她一见钟情，她对我无限崇拜
+        var greenList=[]
+        for (var i=1;i<=8;i++) {
+        	var image_path='./images/green/green'+i+'.png'
+        	greenList.push(image_path)
+        }
+        //蓝色花瓣
+        var blueList=[]
+        for (var i=1;i<=48;i++) {
+        	var image_path='./images/blue/blue'+i+'.png'
+        	blueList.push(image_path)
+        }
+        //紫色花瓣
+        var purpleList=[]
+        for (var i=1;i<=13;i++) {
+        	var image_path='./images/purple/purple'+i+'.png'
+        	purpleList.push(image_path)
+        }
+        //红色花瓣
+        var redList=[]
+        for (var i=1;i<=8;i++) {
+        	var image_path='./images/red/red'+i+'.png'
+        	redList.push(image_path)
+        }
+        snowflakeURl=pinkList
+//      snowflakeURl=greenList
+//      snowflakeURl=purpleList
+//      snowflakeURl=blueList
+//      snowflakeURl=redList
+//      alert(snowflakeURl)
+//      snowflakeURl.add()
+        var container = $("#content");
+           visualWidth = container.width();
+           visualHeight = container.height();
+    　　//获取content的宽高
+        function snowflake() {
+            // 雪花容器
+            var $flakeContainer = $('#snowflake');
+    　　　　　　
+            // 随机六张图
+            function getImagesName() {
+                return snowflakeURl[[Math.floor(Math.random() * snowflakeURl.length)]];
+            }
+            // 创建一个雪花元素
+            function createSnowBox() {
+                var url = getImagesName();
+                return $('<div class="snowbox" />').css({
+                    'width': 25,
+                    'height': 26,
+                    'position': 'absolute',
+                    'backgroundRepeat':'no-repeat',
+                    'zIndex': 100000,
+                    'top': '-41px',
+                    'backgroundImage': 'url(' + url + ')'
+                }).addClass('snowRoll');
+            }
+            function flowrStart(){
+                // 运动的轨迹
+                var startPositionLeft = Math.random() * visualWidth - 100,
+                    startOpacity    = 1,
+                    endPositionTop  = visualHeight - 40,
+                    endPositionLeft = startPositionLeft - 100 + Math.random() * 500,
+                    duration        = visualHeight * 10 + Math.random() * 5000;
+                // 随机透明度，不小于0.5
+                var randomStart = Math.random();
+                randomStart = randomStart < 0.5 ? startOpacity : randomStart;
+                // 创建一个雪花
+                var $flake = createSnowBox();
+                // 设计起点位置
+                $flake.css({
+                    left: startPositionLeft,
+                    opacity : randomStart
+                });
+                // 加入到容器
+                $flakeContainer.append($flake);
+                // 开始执行动画
+                $flake.transition({
+                    top: endPositionTop,
+                    left: endPositionLeft,
+                    opacity: 0.7
+                }, duration, 'ease-out', function() {
+                    $(this).remove() //结束后删除
+                });
+            }
+            // 开始飘花
+            flowr_start=setInterval(flowrStart, 500);
+        }
+        //我对她一见钟情，她对我无限崇拜,初识，粉色
+        snowflake()
+        //偶然的开始，萌芽，绿色
+        setTimeout(function(){
+         	clearInterval(flowr_start)
+        },30000)
+        setTimeout(function(){
+         	snowflakeURl=greenList
+         	snowflake()
+        },31200)
+        //许下了约定，守约，蓝色
+        setTimeout(function(){
+         	clearInterval(flowr_start)
+        },50000)
+        setTimeout(function(){
+         	snowflakeURl=blueList
+         	snowflake()
+        },51200)
+        //第一段结束
+        setTimeout(function(){
+         	clearInterval(flowr_start)
+        },95000)
+        //第二段节奏，陌生到了解，相知，紫色
+        setTimeout(function(){
+         	snowflakeURl=purpleList
+         	snowflake()
+        },111500)
+        //简单的相恋，相恋，红色
+        setTimeout(function(){
+         	clearInterval(flowr_start)
+         	snowflakeURl=redList
+         	snowflake()
+        },170000)
+    　　　//执行函数
+        
+       var audioStatus = "paused";
+       var audio = document.getElementById("promise");
+       setTimeout(function(){
+       	audio.play()
+       },500)
+    })
+	
+	
+	</script>
+</body>
+        <audio id="promise" loop="loop" preload="load">
+			<source src="music/promise.mp3">
+		</audio>
+</html>

@@ -1,0 +1,249 @@
+#promise_image{
+	position: relative;
+	width: 700px;
+	margin: 100px auto;
+	font-family: "love";
+}
+/*粉色初识*/
+#pink{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	color: pink;
+}
+#pink_title{
+	width: 100%;
+	float: left;
+	text-align: center;
+	font-size: 50px;
+}
+#pink_yt{
+	width: 300px;
+	height: 300px;
+	background: url(../../images/promise/pink/pink2.png);
+	background-size: 100%;
+	float: left;
+	opacity: 0;
+}
+#pink_like{
+	padding-top: 60px;
+	width: 100px;
+	float: left;
+	font-size: 60px;
+	text-align: center;
+	opacity: 0;
+}
+#pink_xlm{
+	width: 300px;
+	height: 300px;
+	background: url(../../images/promise/pink/pink1.png);
+	background-size: 100%;
+	float: left;
+	opacity: 0;
+}
+#pink_content1{
+	width: 300px;
+	float: left;
+	text-align: center;
+	font-size: 40px;
+}
+#pink_content2{
+	width: 300px;
+	margin-left: 100px;
+	float: left;
+	text-align: center;
+	font-size: 40px;
+}
+/*//粉色初识*/
+
+/*绿色萌芽*/
+#green{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	color: #00CD00;
+}
+#green_title{
+	width: 100%;
+	float: left;
+	text-align: center;
+	font-size: 50px;
+	-webkit-text-stroke: 1px #fff47c;
+}
+#green_xlm{
+	width: 300px;
+	height: 300px;
+	background: url(../../images/promise/green/green2.png);
+	background-size: 100%;
+	float: left;
+	opacity: 0;
+}
+#green_like{
+	padding-top: 60px;
+	width: 100px;
+	float: left;
+	font-size: 60px;
+	text-align: center;
+	opacity: 0;
+	-webkit-text-stroke: 1px #fff47c;
+}
+#green_yt{
+	width: 300px;
+	height: 300px;
+	background: url(../../images/promise/green/green1.png);
+	background-size: 100%;
+	float: left;
+	opacity: 0;
+}
+#green_content{
+	width: 100%;
+	float: left;
+	text-align: center;
+	font-size: 40px;
+	-webkit-text-stroke: 1px #fff47c;
+}
+/*//绿色萌芽*/
+
+/*//蓝色相约*/
+#blue{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	color: #1E90FF;
+}
+#blue_title{
+	width: 100%;
+	float: left;
+	text-align: center;
+	font-size: 50px;
+	-webkit-text-stroke: 1px #fff47c;
+}
+#blue_yt{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	float: left;
+}
+#blue_ytA{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	float: left;
+}
+#blue_yt1{
+	width: 300px;
+	height: 130px;
+	background: url(../../images/promise/blue/blue5.png);
+	background-size: 130px 130px;
+	float: left;
+	opacity: 1;
+	background-repeat: no-repeat;
+	background-position:center 0; 
+	opacity: 0;
+}
+#blue_yt2{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	background: url(../../images/promise/blue/blue3.png);
+	background-size: 100%;
+	float: left;
+	opacity: 1;
+	background-repeat: no-repeat;
+	background-position:center 0; 
+	opacity: 0;
+}
+#blue_yt1_content{
+	width: 300px;
+	float: left;
+	font-size: 40px;
+	text-align: center;
+	-webkit-text-stroke: 1px #fff47c;
+}
+#blue_like{
+	padding-top: 60px;
+	width: 100px;
+	float: left;
+	font-size: 60px;
+	text-align: center;
+	opacity: 1;
+	-webkit-text-stroke: 1px #fff47c;
+	opacity: 0;
+}
+#blue_xlm{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	float: left;
+}
+#blue_xlm1{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	background: url(../../images/promise/blue/blue2.png);
+	background-size: 130px 130px;
+	float: left;
+	background-repeat: no-repeat;
+	background-position:center bottom; 
+	opacity: 0;
+}
+#blue_xlm2{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	background: url(../../images/promise/blue/blue1.png);
+	background-size: 100%;
+	float: left;
+	opacity: 1;
+	background-repeat: no-repeat;
+	background-position:center bottom; 
+	opacity: 0;
+}
+#blue_content{
+	position: relative;
+	width: 100%;
+	float: left;
+	text-align: center;
+	font-size: 40px;
+	-webkit-text-stroke: 1px #fff47c;
+}
+#blue_contentA{
+	position: absolute;
+	width: 100%;
+	float: left;
+	/*opacity: 0;*/
+}
+#blue_contentB{
+	position: absolute;
+	width: 100%;
+	float: left;
+}
+#blue_contentC{
+	position: absolute;
+	width: 100%;
+	float: left;
+}
+#blue_content1{
+	width: 300px;
+	float: left;
+}
+#blue_content2{
+	width: 300px;
+	float: left;
+	margin-left: 100px;
+}
+#blue_content3{
+	width: 300px;
+	float: left;
+}
+#blue_content4{
+	width: 300px;
+	float: left;
+	margin-left: 100px;
+}
+#blue_content5{
+	width: 100%;
+	float: left;
+	text-align: center;
+	opacity: 0;
+}
