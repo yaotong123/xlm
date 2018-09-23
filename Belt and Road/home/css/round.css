@@ -1,0 +1,260 @@
+#main {
+	width: 100%;
+	background-image: url(../images/bj4.jpg);
+	background-size: 100% 100%
+}
+
+#center {
+	position: absolute;
+	width: 75%;
+	height: 50%;
+	left: -10%;
+	right: 0;
+	margin: 0 auto;
+}
+
+.history {
+	position: absolute;
+	width: 0.2%;
+	height: 0.55%;
+	left: 10%;
+	bottom: 10%;
+	background-size: 100% 100%;
+	transition: transform 0.5s;
+	-moz-border-radius: 50%;
+	/* Gecko browsers */
+	-webkit-border-radius: 50%;
+	/* Webkit browsers */
+	border-radius: 50%;
+	/* W3C syntax */
+	display: none;
+}
+
+.round_history {
+	position: absolute;
+	width: 0.2%;
+	height: 0.55%;
+	left: 10%;
+	bottom: 10%;
+	background-image: url(../images/round.png);
+	background-size: 100% 100%;
+	transition: transform 1s;
+}
+
+.perspective {
+	position: absolute;
+	width: 0.2%;
+	height: 0.55%;
+	left: 25%;
+	bottom: 50%;
+	background-size: 100% 100%;
+	transition: transform 0.5s;
+	-moz-border-radius: 50%;
+	/* Gecko browsers */
+	-webkit-border-radius: 50%;
+	/* Webkit browsers */
+	border-radius: 50%;
+	/* W3C syntax */
+	display: none;
+}
+.round_perspective {
+	position: absolute;
+	width: 0.2%;
+	height: 0.55%;
+	left: 25%;
+	bottom: 50%;
+	background-image: url(../images/round.png);
+	background-size: 100% 100%;
+	transition: transform 1.5s;
+}
+.achivement {
+	position: absolute;
+	width: 0.2%;
+	height: 0.55%;
+	left: 45%;
+	bottom: 70%;
+	background-size: 100% 100%;
+	transition: transform 0.5s;
+	-moz-border-radius: 50%;
+	/* Gecko browsers */
+	-webkit-border-radius: 50%;
+	/* Webkit browsers */
+	border-radius: 50%;
+	/* W3C syntax */
+	display: none;
+}
+.round_achivement {
+	position: absolute;
+	width: 0.2%;
+	height: 0.55%;
+	left: 45%;
+	bottom: 70%;
+	background-image: url(../images/round.png);
+	background-size: 100% 100%;
+	transition: transform 2s;
+}
+.road {
+	position: absolute;
+	width: 0.2%;
+	height: 0.55%;
+	left: 65%;
+	bottom: 70%;
+	background-size: 100% 100%;
+	transition: transform 0.5s;
+	-moz-border-radius: 50%;
+	/* Gecko browsers */
+	-webkit-border-radius: 50%;
+	/* Webkit browsers */
+	border-radius: 50%;
+	/* W3C syntax */
+	display: none;
+}
+.round_road {
+	position: absolute;
+	width: 0.2%;
+	height: 0.55%;
+	left: 65%;
+	bottom: 70%;
+	background-image: url(../images/round.png);
+	background-size: 100% 100%;
+	transition: transform 2.5s;
+}
+.country {
+	position: absolute;
+	width: 0.2%;
+	height: 0.55%;
+	left: 85%;
+	bottom: 50%;
+	background-size: 100% 100%;
+	transition: transform 0.5s;
+	-moz-border-radius: 50%;
+	/* Gecko browsers */
+	-webkit-border-radius: 50%;
+	/* Webkit browsers */
+	border-radius: 50%;
+	/* W3C syntax */
+	display: none;
+}
+.round_country {
+	position: absolute;
+	width: 0.2%;
+	height: 0.55%;
+	left: 85%;
+	bottom: 50%;
+	background-image: url(../images/round.png);
+	background-size: 100% 100%;
+	transition: transform 3s;
+}
+.about {
+	position: absolute;
+	width: 0.2%;
+	height: 0.55%;
+	right: 0%;
+	bottom: 10%;
+	background-size: 100% 100%;
+	transition: transform 0.5s;
+	-moz-border-radius: 50%;
+	/* Gecko browsers */
+	-webkit-border-radius: 50%;
+	/* Webkit browsers */
+	border-radius: 50%;
+	/* W3C syntax */
+	display: none;
+}
+.round_about {
+	position: absolute;
+	width: 0.2%;
+	height: 0.55%;
+	right: 0%;
+	bottom: 10%;
+	background-image: url(../images/round.png);
+	background-size: 100% 100%;
+	transition: transform 3.5s;
+}
+
+@font-face {
+	font-family: "HYI4GJ";
+	src: url("../../fonts/HYI4GJ.ttf");
+}
+.word1{
+	position: absolute;
+	width: 50%;
+	height: 30%;
+	top: 40%;
+	left: 10%;
+	right: 0;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+	font-size: 80px;
+	font-family: "HYI4GJ";
+	opacity: 0;
+	
+}
+.word2{
+	position: absolute;
+	width: 50%;
+	height: 30%;
+	top: 100%;
+	left: 10%;
+	right: 0;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+	font-size: 80px;
+	font-family: "HYI4GJ";
+	opacity: 0;
+}
+
+.round_scale {
+	transform: scale(90, 90);
+	/* for Chrome || Safari */
+	-webkit-transform: scale(90, 90);
+	/* for Firefox */
+	-moz-transform: scale(90, 90);
+	/* for IE */
+	-ms-transform: scale(90, 90);
+	/* for Opera */
+	-o-transform: scale(90, 90);
+}
+
+.nav_scale {
+	transform: scale(80, 80);
+	/* for Chrome || Safari */
+	-webkit-transform: scale(80, 80);
+	/* for Firefox */
+	-moz-transform: scale(80, 80);
+	/* for IE */
+	-ms-transform: scale(80, 80);
+	/* for Opera */
+	-o-transform: scale(80, 80);
+}
+
+.camel {
+	position: absolute;
+	width: 35%;
+	height: 50%;
+	background-image: url(../images/camel.png);
+	background-size: 100% 100%;
+	right: -5%;
+	bottom: 0;
+}
+
+.camel_decorate {
+	position: absolute;
+	width: 35%;
+	height: 50%;
+	background-color: white;
+	right: 0;
+	bottom: 0;
+	opacity: 0.1;
+}
+
+.bj_decorate {
+	position: absolute;
+	width: 100%;
+	height: 20%;
+	background-color: white;
+	bottom: 0;
+	opacity: 0.2;
+}

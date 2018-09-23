@@ -1,0 +1,272 @@
+h4,
+h5,
+h6,
+h1,
+h2,
+h3 {
+	margin: 0;
+}
+
+ul,
+ol {
+	margin: 0;
+	width: 100%;
+}
+
+p {
+	margin: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Pompiere-Regular';
+}
+
+@font-face {
+	font-family: 'Pompiere-Regular';
+	src: url(../fonts/Pompiere-Regular.ttf) format('truetype');
+}
+
+p,
+a,
+span,
+i {
+	font-family: 'Open Sans', sans-serif;
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
+}
+
+
+/*--header-nav--*/
+
+#top {
+	width: 100%;
+	height: 20%;
+	position: fixed;
+	z-index: 9999;
+}
+
+.navbar-default {
+	background-color: rgba(67, 110, 238, 0);
+	padding: 3em 0em 2.5em;
+	margin: 0;
+	border-radius: 0;
+	border: none;
+	/* border-bottom: 2px solid white; */
+}
+
+.navbar-header a.navbar-brand {
+	color: #fff;
+	font-size: 3em;
+	font-weight: lighter;
+	margin-bottom: 20px;
+}
+
+a.navbar-brand h1 {
+	font-size: 1.1em;
+	padding-bottom: 0;
+}
+
+a.navbar-brand span {
+	font-size: .4em;
+	padding-top: 0px;
+	display: block;
+	font-weight: lighter;
+}
+
+.navbar-header a.navbar-brand:hover {
+	color: #fff;
+	text-decoration: none;
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
+}
+
+.navbar-nav>li>a {
+	padding-top: 26px !important;
+	padding-bottom: 0 !important;
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
+}
+
+.navbar-brand {
+	padding: 0px 15px !important;
+	line-height: 7px !important;
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
+}
+
+ul.nav.navbar-nav.navbar-right.margin-top {
+	margin-top: 0px;
+	padding: 0;
+}
+
+ul.nav.navbar-nav.navbar-right.margin-top li {
+	width: 13%;
+	text-align: center;
+	z-index: 9999;
+}
+
+#logo {
+	position: absolute;
+	height: 197px;
+	width: 260px;
+	top: -40px;
+	background-image: url("../images/logo1.png");
+	background-size: 100% 100%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	opacity: 1;
+}
+
+ul.nav.navbar-nav.navbar-right.margin-top li:HOVER {
+	-webkit-transition: 1.5s all ease;
+	-moz-transition: 1.5s all ease;
+	-o-transition: 1.5s all ease;
+	-ms-transition: 1.5s all ease;
+}
+
+
+/*小三点*/
+
+a.navbar-brand {
+	padding: 0;
+	line-height: 1.6em;
+	height: inherit;
+}
+
+.navbar-nav li a {
+	color: #fff !important;
+	font-size: 1.3em;
+	padding: 0;
+	font-weight: lighter;
+}
+
+.navbar-nav a::before {
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	color: transparent;
+	content: '.';
+	text-shadow: 0 0 transparent;
+	font-size: 5em;
+	-webkit-transition: text-shadow 0.3s, color 0.3s;
+	-moz-transition: text-shadow 0.3s, color 0.3s;
+	transition: text-shadow 0.3s, color 0.3s;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	transform: translateX(-50%);
+	pointer-events: none;
+}
+
+.navbar-nav a:hover::before,
+.navbar-nav a:focus::before,
+.navbar-nav a.active::before {
+	color: #fff;
+	text-shadow: 10px 0 #32CD32, -10px 0 #32CD32;
+}
+
+
+/*//nav  */
+
+@font-face {
+	font-family: "HYI4GJ";
+	src: url("../../fonts/HYI4GJ.ttf");
+}
+
+.cl-effect-2 a span {
+	text-shadow: 1px 1px 0 #CCC, 1px 1px 0 #CCC, /* end of 2 level deep grey shadow */
+	1px 1px 0 #444, 3px 3px 0 #444;
+	/* end of 4 level deep dark shadow */
+	/*font-family: "楷体", "楷体_GB2312";*/
+	font-family: "HYI4GJ";
+	position: relative;
+	display: inline-block;
+	padding: 0;
+	font-size: 32px;
+	font-weight: lighter;
+	background: none !important;
+	-webkit-transform-origin: 50% 0;
+	-moz-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	color: #fff;
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
+}
+
+.cl-effect-2 a span:before {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 102%;
+	height: 100%;
+	font-size: 32px;
+	font-weight: lighter;
+	color: #EEEE00 !important;
+	padding: 0;
+	z-index: 999;
+	background: none;
+	content: attr(data-hover);
+	-webkit-transition: background 0.3s;
+	-moz-transition: background 0.3s;
+	transition: background 0.3s;
+	-webkit-transform: rotateX(-90deg);
+	-ms-transform: rotateX(-90deg);
+	-o-transform: rotateX(-90deg);
+	-moz-transform: rotateX(-90deg);
+	transform: rotateX(-90deg);
+	-webkit-transform-origin: 50% 0;
+	-o-transform-origin: 50% 0;
+	-ms-transform-origin: 50% 0;
+	-moz-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
+	content: attr(data-hover);
+}
+
+.cl-effect-2 a:hover span,
+.cl-effect-2 a:focus span {
+	-webkit-transform: rotateX(90deg) translateY(-22px);
+	-moz-transform: rotateX(90deg) translateY(-22px);
+	-o-transform: rotateX(90deg) translateY(-22px);
+	-ms-transform: rotateX(90deg) translateY(-22px);
+	transform: rotateX(90deg) translateY(-22px);
+	color: #fff;
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
+}

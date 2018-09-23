@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>Road</title>
+
+		<!--左上角-->
+		<link rel="icon" href="../icon.png" />
+		<!--//左上角-->
+
+		<!--nav  -->
+		<link href="../nav/css/bootstrap.nav.css" rel="stylesheet" type="text/css">
+		<link href="../nav/css/nav.css" rel="stylesheet" type="text/css" />
+
+		<!--//nav  -->
+
+		<!-- Theme style  -->
+		<link rel="stylesheet" href="css/style.css">
+
+		<!--map  -->
+		<link href="map/css/map.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="map/js/jquery.min.js"></script>
+		<!--//map  -->
+
+		<!--svgimg  -->
+
+		<link rel="stylesheet" href="svgimg/css/normalize.min.css">
+		<link rel="stylesheet" href="svgimg/css/style.css">
+		<!--//svgimg  -->
+
+		<!--置顶必备  -->
+		<link href="../move_top/css/moveTop.css" type="text/css" rel="stylesheet" media="all">
+		<script src="../js/jquery-1.11.0.min.js"></script>
+		<!-- start-smoth-scrolling-->
+		<script type="text/javascript" src="../move_top/js/move-top_moveTop.js"></script>
+		<script type="text/javascript" src="../move_top/js/easing_moveTop.js"></script>
+		<!--//置顶必备-->
+
+		<!--copyright -->
+		<link rel="stylesheet" type="text/css" href="../copyright/css/copyright.css" />
+		<!--导航响应-->
+		<script src="../nav/js/nav.js"></script>
+		<!--//导航响应-->
+	</head>
+
+	<body>
+
+		<div id="page">
+			<!--nav  -->
+			<div id="top">
+
+				<!--nav  -->
+
+				<nav class="navbar navbar-default">
+					<div class="container">
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right margin-top cl-effect-2">
+								<li>
+									<a href="../history/history_e.html"><span data-hover="History">History</span></a>
+								</li>
+								<li>
+									<a href="../perspective/perspective_e.html"><span data-hover="View">View</span></a>
+								</li>
+								<li>
+									<a href="../achievement/achievement_e.html"><span data-hover="Achievement">Achievement</span></a>
+								</li>
+								<li style="background: none;width: 22%">&nbsp;
+									<div id="logo" onclick="window.open('../home/home_e.html','_self');" style="cursor: pointer;"></div>
+								</li>
+								<li>
+									<a href="../road/road_e.html"><span data-hover="Road">Road</span></a>
+								</li>
+								<li>
+									<a href="../country/country_e.html"><span data-hover="Exoticism">Exoticism</span></a>
+								</li>
+								<li>
+									<a href="../about/about_e.html"><span data-hover="About Us">About Us</span></a>
+								</li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+						<!-- /.navbar-collapse -->
+					</div>
+					<!-- /container-fluid -->
+				</nav>
+				<!--//nav  -->
+
+			</div>
+			<!--//nav  -->
+
+			<!--map  -->
+			<div class="contents" style="width:100%;height: 700px;padding-top: 150px;padding-left: 1px; margin:0 auto;background-image: url(images/bj3.jpg);background-size: 100% 100%;">
+				<div class="b_map">
+					<ul id="m_btn" class="e_map_tags">
+						<li class="m_riben centers" data-type="riben"><span>Japan</span></li>
+						<li class="m_nanjing" data-type="nanjing"><span>Nanjing</span></li>
+						<li class="m_ningbo" data-type="ningbo"><span>Ningbo</span></li>
+						<li class="m_guangzhou" data-type="guangzhou"><span>Guangzhou</span></li>
+						<li class="m_yuenan" data-type="yuenan"><span>Vietnam</span></li>
+						<li class="m_malaixiya" data-type="malaixiya"><span>Malaysia</span></li>
+						<li class="m_yinni" data-type="yinni"><span>Indonesia</span></li>
+						<li class="m_miandian" data-type="miandian"><span>Myanmar</span></li>
+						<li class="m_mengjiala" data-type="mengjiala"><span>Bengal</span></li>
+						<li class="m_yindu" data-type="yindu"><span>India</span></li>
+						<li class="m_bajisitan" data-type="bajisitan"><span>Pakistan</span></li>
+						<li class="m_suomali" data-type="suomali"><span>Somalia</span></li>
+						<li class="m_keniya" data-type="keniya"><span>Kenya</span></li>
+						<li class="m_yemen" data-type="yemen" style="z-index: 9999;"><span>Yemen</span></li>
+						<li class="m_shate" data-type="shate"><span>Saudi </span></li>
+						<li class="m_aiji" data-type="aiji"><span>Egypt</span></li>
+						<li class="m_tuerqi" data-type="tuerqi"><span>Turkey</span></li>
+						<li class="m_yidali" data-type="yidali"><span>Italy</span></li>
+					</ul>
+					<div class="e_map_info">
+						<div style="width: 280px;height:404px;background-color: rgba(100,149,237, 0.4);top: 83px;left: 748px;position: absolute;border-radius: 30px;">
+							<div class="m_content_side">
+								<a href="javascript:;" class="m_left"><img src="map/img/arraw-left.png" /></a>
+								<a href="javascript:;" class="m_right"><img src="map/img/arraw-right.png" /></a>
+							</div>
+						</div>
+						<div class="m_content m_riben hide" data-panel="riben" style="display:block;">
+
+							<p style="text-align:center; font-size:20px;font-weight: bold;">Japan</p>
+							<div id="scImg" style="background-image: url(img/1riben.jpg);">
+							</div>
+							<p id="introduce">Japan, referred to as Japan, is located in East Asia, the country's name means "sunrise country", the territory by Hokkaido, Honshu, Shikoku, Kyushu.</p>
+						</div>
+
+						<div class="m_content m_nanjing hide" data-panel="nanjing" style="display:none;">
+
+							<p style="text-align:center; font-size:20px; font-weight: bold;">Nanjing</p>
+							<div id="scImg" style="background-image: url(img/2nanjing.jpg);">
+							</div>
+							<p id="introduce">Nanjing is the ancient capital of four China, the first batch of national historical and cultural city, is an important birthplace of Chinese civilization.</p>
+						</div>
+
+						<div class="m_content m_ningbo hide" data-panel="ningbo" style="display:none;">
+
+							<p style="text-align:center; font-size:20px; ">Ningbo</p>
+							<div id="scImg" style="background-image: url(img/3ningbo.jpg);">
+							</div>
+							<p id="introduce">Ningbo, referred to as "Yong", the world's fourth largest port city, one of the five major regional centers of the Yangtze River Delta.</p>
+						</div>
+
+						<div class="m_content m_guangzhou hide" data-panel="guangzhou" style="display:none;">
+
+							<p style="text-align:center; font-size:20px; ">Guangzhou</p>
+							<div id="scImg" style="background-image: url(img/4guangzhou.jpg);">
+							</div>
+							<p id="introduce">Guangzhou since 230s to become the main port of the maritime Silk Road, Tang and Song Dynasties become the first port of Chinese.</p>
+						</div>
+
+						<div class="m_content m_yuenan hide" data-panel="yuenan" style="display:none;">
+
+							<p style="text-align:center; font-size:20px; ">Vietnam</p>
+							<div id="scImg" style="background-image: url(img/5yuenan.jpg);">
+							</div>
+							<p id="introduce">Socialist Republic of Vietnam, referred to as Vietnam, is a socialist country in asia. Located in the southeast of the eastern part of the Indochina Peninsula.</p>
+						</div>
+
+						<div class="m_content m_malaixiya hide" data-panel="malaixiya" style="display:none;">
+
+							<p style="text-align:center; font-size:20px; ">Malaysia</p>
+							<div id="scImg" style="background-image: url(img/6malaixiya.jpg);">
+							</div>
+							<p id="introduce">Malaysia is a newly diversified economic country. It is one of the four tigers in Asia and a capitalist country.</p>
+						</div>
+
+						<div class="m_content m_yinni hide" data-panel="yinni" style="display:none;">
+
+							<p style="text-align:center; font-size:20px; ">Indonesia</p>
+							<div id="scImg" style="background-image: url(img/7yinni.jpg);">
+							</div>
+							<p id="introduce">Indonesia is made up of about 17508 islands, a part of the Malay Archipelago and the largest archipelago nation in the world.</p>
+						</div>
+
+						<div class="m_content m_miandian hide" data-panel="miandian" style="display:none;">
+
+							<p style="text-align:center; font-size:20px; ">Myanmar</p>
+							<div id="scImg" style="background-image: url(img/8miandian.jpg);">
+							</div>
+							<p id="introduce">Burma is a country in Southeast Asia and a member of the association of Southeast Asian nations.</p>
+						</div>
+
+						<div class="m_content m_mengjiala hide" data-panel="mengjiala" style="display:none;">
+
+							<p style="text-align:center; font-size:20px; ">Bengal</p>
+							<div id="scImg" style="background-image: url(img/9mengjiala.jpg);">
+							</div>
+							<p id="introduce">Bangladesh is one of the ancient peoples of the South Asian subcontinent. Bangladesh is a subtropical monsoon climate.</p>
+						</div>
+
+						<div class="m_content m_yindu hide" data-panel="yindu" style="display:none;">
+
+							<p style="text-align:center; font-size:20px; ">India</p>
+							<div id="scImg" style="background-image: url(img/10yindu.jpg);">
+							</div>
+							<p id="introduce">India's 2/3 people still live directly or indirectly on agriculture. In recent years, the service sector has grown rapidly.</p>
+						</div>
+
+						<div class="m_content m_bajisitan hide" data-panel="bajisitan" style="display:none;">
+
+							<p style="text-align:center; font-size:20px; ">Pakistan</p>
+							<div id="scImg" style="background-image: url(img/11bajisitan.jpg);">
+							</div>
+							<p id="introduce">Islamic Republic of Pakistan, referred to as Pakistan, means "holy land" and "Islamic country""，and it is a multi-ethnic Islamic country.</p>
+						</div>
+
+						<div class="m_content m_suomali hide" data-panel="suomali" style="display:none;">
+
+							<p style="text-align:center; font-size:20px; ">Somalia</p>
+							<div id="scImg" style="background-image: url(img/12suomali.jpg);">
+							</div>
+							<p id="introduce">The Federal Republic of Somalia, or Somalia, located on the eastern part of the African continent, has the longest coastline in Africa.</p>
+						</div>
+
+						<div class="m_content m_keniya hide" data-panel="keniya" style="display:none;">
+
+							<p style="text-align:center; font-size:20px; ">Kenya</p>
+							<div id="scImg" style="background-image: url(img/13kenniya.jpg);">
+							</div>
+							<p id="introduce">Kenya is one of the cradles of mankind. The human skull fossils were excavated about 2 million 500 thousand years ago.</p>
+						</div>
+
+						<div class="m_content m_yemen hide" data-panel="yemen" style="display:none;">
+
+							<p style="text-align:center; font-size:20px; ">Yemen</p>
+							<div id="scImg" style="background-image: url(img/14yemen.jpg);">
+							</div>
+							<p id="introduce">Yemen has more than 3000 years of written records of history, is one of the cradles of ancient civilization in Arabia world.
+							</p>
+						</div>
+
+						<div class="m_content m_shate hide" data-panel="shate" style="display:none;">
+
+							<p style="text-align:center; font-size:20px; ">Saudi</p>
+							<div id="scImg" style="background-image: url(img/15shate.jpg);">
+							</div>
+							<p id="introduce">The kingdom of Saudi Arabia, referred to as Saudi arabia. Saudi Arabia is a veritable "oil kingdom",making it one of the richest countries in the world.</p>
+						</div>
+
+						<div class="m_content m_aiji hide" data-panel="aiji" style="display:none;">
+
+							<p style="text-align:center; font-size:20px; ">Egypt</p>
+							<div id="scImg" style="background-image: url(img/16aiji.jpg);">
+							</div>
+							<p id="introduce">Egypt is an African power and the third largest economy in africa. Ancient Egypt is one of the four ancient civilizations in the world. It is the earliest kingdom in the world.</p>
+						</div>
+
+						<div class="m_content m_tuerqi hide" data-panel="tuerqi" style="display:none;">
+
+							<p style="text-align:center; font-size:20px; ">Turkey</p>
+							<div id="scImg" style="background-image: url(img/17tuerqi.jpg);">
+							</div>
+							<p id="introduce">Turkey is located between the Mediterranean Sea and the Black Sea between the two continents of Asia and europe. </p>
+						</div>
+
+						<div class="m_content m_yidali hide" data-panel="yidali" style="display:none;">
+
+							<p style="text-align:center; font-size:20px; ">Italy</p>
+							<div id="scImg" style="background-image: url(img/18yidali.jpg);">
+							</div>
+							<p id="introduce">Italy is located in the south of Europe, including the Apennine Peninsula and Sicily, Sadin islands, north of the Alps as the border barrier with France.</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div style="width: 1030px;height: 100px;margin: 30px auto;">
+				<div style="width: 500px;background-image:url(images/br.png);height: 100px;"></div>
+
+			</div>
+			<!--svgimg  -->
+			<div class='container1'>
+				<ul>
+					<li>
+						<a class='normal' href='#' style="background-image: url(svgimg/img/a海运大联通.jpg);">
+						</a>
+						<div class='info'>
+							<h3>Maritime Unicom</h3>
+							<p>Chinese port enterprises are developing toward integrated logistics enterprises, and Asia, with China as the center, is gradually becoming the world's port and shipping center.</p>
+						</div>
+					</li>
+					<li>
+						<a class='normal' href='#' style="background-image: url(svgimg/img/a空运大联通.jpg);">
+						</a>
+						<div class='info'>
+							<h3>Air China Unicom</h3>
+							<p>In the push of The Belt and Road "and" foreign trade "strategy, the airport construction and operation management of China technology continues to develop.</p>
+						</div>
+					</li>
+					<li>
+						<a class='normal' href='#' style="background-image: url(svgimg/img/a陆运大联通.jpg);">
+						</a>
+						<div class='info'>
+							<h3>Land transport big Unicom</h3>
+							<p>China's high-speed rail is a rapid development of the state, according to the "long-term railway network planning", China will further promote the railway construction, will further build to the coast.</p>
+						</div>
+					</li>
+					<li>
+						<a class='normal' href='#' style="background-image: url(svgimg/img/a军事新领域.jpg);">
+						</a>
+						<div class='info'>
+							<h3>New military field</h3>
+							<p>Chinese shipbuilding enterprises in the aircraft carrier, nuclear submarine as the representative of the key project tasks in progress, domestic 001A aircraft carrier hull has been completed nearly half.</p>
+						</div>
+					</li>
+					<li>
+						<a class='normal' href='#' style="background-image: url(svgimg/img/b工业新发展.jpg);">
+						</a>
+						<div class='info'>
+							<h3>New development of industry</h3>
+							<p>Under the guidance of the "one stroke" strategy, China's industrial innovation system has been initially formed, the technological innovation environment has been improved.</p>
+						</div>
+					</li>
+					<li>
+						<a class='normal' href='#' style="background-image: url(svgimg/img/b医疗新发展.jpg);">
+						</a>
+						<div class='info'>
+							<h3>New medical development</h3>
+							<p>Driven by population aging and industrial policy, China's medical services market has entered a rapid release period, China is further improving the medical service model.</p>
+						</div>
+					</li>
+					<li>
+						<a class='normal' href='#' style="background-image: url(svgimg/img/b农业新发展.jpg);">
+						</a>
+						<div class='info'>
+							<h3>New development of agriculture</h3>
+							<p>Old China's backward agriculture is constantly improving, with the capital investment, China's agricultural technology has been greatly improved.</p>
+						</div>
+					</li>
+					<li>
+						<a class='normal' href='#' style="background-image: url(svgimg/img/b航空新探测.jpg);">
+						</a>
+						<div class='info'>
+							<h3>New exploration of air</h3>
+							<p>Following the success of the launch of the day boat, China will continue to launch Chang'e five and six new satellites to help people in the aircraft and high-speed rail on the net.</p>
+						</div>
+					</li>
+					<li>
+						<a class='normal' href='#' style="background-image: url(svgimg/img/c生物新奥秘.jpg);">
+						</a>
+						<div class='info'>
+							<h3>New mysteries of life</h3>
+							<p>Biotechnology research is China and the world have been working hard to study the broken technology, has been successfully developed for the regeneration of hematopoietic stem cells of artificial bone marrow.</p>
+						</div>
+					</li>
+					<li>
+						<a class='normal' href='#' style="background-image: url(svgimg/img/c信息新领域.jpg);">
+						</a>
+						<div class='info'>
+							<h3>New areas of information</h3>
+							<p>China's information security has become mature, and by the Chinese state-owned enterprises to build China's ECU ECU 911 system has become China's solution to go out of the "new business card".</p>
+						</div>
+					</li>
+					<li>
+						<a class='normal' href='#' style="background-image: url(svgimg/img/c夜幕大都市.jpg);">
+						</a>
+						<div class='info'>
+							<h3>Night metropolis</h3>
+							<p>When the night falls, the entire Panzhihua Iron and Steel a brilliant, flashing lights like the wisdom of the builders of the eyes, urban construction has become perfect, the night under the metropolis is more like a work of art.</p>
+						</div>
+					</li>
+					<li>
+						<a class='normal' href='#' style="background-image: url(svgimg/img/c共享全球体.jpg);">
+						</a>
+						<div class='info'>
+							<h3>Share the whole world</h3>
+							<p>Shared economy is to rely on modern information network technology to establish a shared platform, the development of ferocious "shared economy" is sweeping the world.</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<script src="svgimg/js/index.js"></script>
+
+			<!--//svgimg  -->
+
+			<!--moveTop  -->
+			<script src="move_top/js/jquery.swipebox.min_moveTop.js"></script>
+			<!--//gallery-->
+			<script type="text/javascript">
+				$(document).ready(function() {
+					/*
+					var defaults = {
+						containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear' 
+					};
+					*/
+
+					$().UItoTop({
+						easingType: 'easeOutQuart'
+					});
+
+				});
+			</script>
+			<!--//smooth-scrolling-of-move-up
+	<!-- Bootstrap core JavaScript
+    ================================================== --->
+			<!-- Placed at the end of the document so the pages load faster-->
+			<script src="move_top/js/bootstrap_moveTop.js">
+			</script>
+
+			<!--//moveTop  -->
+
+			<!--copyright  -->
+			<div class="copyright">
+				<div class="copyright_main">
+					<div class="china_english">
+						<a href="road.html" style="margin: 10px;font-family: 'microsoft sans serif'">CHINA</a>/
+						<a href="road_e.html" style="color: yellow;font-family: 'microsoft sans serif'">ENGLISH</a>
+					</div>
+					<div class="copyright_left"></div>
+					<div class="copyright_right">Copyright © 2017 Guilin University of Technology. All rights reserved.</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var i = 0;
+				$(".e_map_tags li").eq(i).find("span").css("display", "block");
+				//获取地图的坐标自动循环的返回值
+				var t = null;
+
+				//初始化自动加载图片
+				onload = xunhuan();
+
+				//鼠标触摸停止内容自动循环
+				$('.e_map_info').on('mouseover', function() {
+					clearInterval(t);
+				});
+				//鼠标离开开启内容自动循环
+				$('.e_map_info').on('mouseout', function() {
+					xunhuan();
+				});
+
+				//地图的坐标自动循环
+				function xunhuan() {
+					t = setInterval(function xunhuan() {
+						i++;
+						if(i == 18) {
+							i = 0;
+						}
+						$(".e_map_tags li").eq(i).addClass("centers").siblings("li").removeClass("centers");
+						$(".e_map_tags li").find("span").css("display", "none");
+						$(".e_map_tags li").eq(i).find("span").css("display", "block");
+						$(".m_content").eq(i).fadeTo('500', 1).siblings(".m_content").hide();
+						$(".e_map_tags li").eq(i).attr('width', '100px');
+
+					}, 3000);
+				}
+
+				$(".e_map_tags li").mouseover(function() {
+					$(".e_map_tags li").removeClass("centers");
+					$(".e_map_tags li").find("span").css("display", "none");
+					$(this).addClass("centers").siblings("li").removeClass("centers");
+					$(this).find("span").css("display", "block");
+					var index = $(this).index();
+					i = index;
+					$(".m_content").eq(index).fadeTo("500", 1).siblings(".m_content").hide();
+					clearInterval(t);
+				});
+				$(".e_map_tags li").mouseout(function() {
+					xunhuan();
+				});
+				//左右切换
+				//点击左箭头
+				$(".m_left").click(function() {
+					i--;
+					if(i == -1) {
+						i = 17;
+					}
+					$(".e_map_tags li").eq(i).addClass("centers").siblings("li").removeClass("centers");
+					$(".e_map_tags li").find("span").css("display", "none");
+					$(".e_map_tags li").eq(i).find("span").css("display", "block");
+					$(".m_content").eq(i).fadeTo('500', 1).siblings(".m_content").hide();
+					clearInterval(t);
+
+				});
+
+				//点击右箭头
+				$(".m_right").on('click', function() {
+					i++;
+					if(i == 18) {
+						i = 0;
+					}
+					$(".e_map_tags li").eq(i).addClass("centers").siblings("li").removeClass("centers");
+					$(".e_map_tags li").find("span").css("display", "none");
+					$(".e_map_tags li").eq(i).find("span").css("display", "block");
+					$(".m_content").eq(i).fadeTo('500', 1).siblings(".m_content").hide();
+					clearInterval(t);
+				});
+
+			});
+		</script>
+		<!--//map  -->
+	</body>
+
+</html>

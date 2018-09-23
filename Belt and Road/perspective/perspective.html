@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>丝路视角</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<!--左上角-->
+		<link rel="icon" href="../icon.png" />
+		<!--//左上角-->
+
+		<!--nav-->
+		<link href="../nav/css/bootstrap.nav.css" rel="stylesheet" type="text/css">
+		<link href="../nav/css/nav.css" rel="stylesheet" type="text/css" />
+
+		<!--banner -->
+		<script type='text/javascript' src='banner/js/modernizr.min.js?ver=2.6.1'></script>
+
+		<!--cat  -->
+		<link href="css_cat/style.css" rel='stylesheet' type='text/css' />
+		<!--//cat  -->
+		<!--content1  -->
+		<link href="css/content1.css" rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" type="text/css" href="css/component_content1.css" />
+
+		<!--置顶必备  -->
+		<link href="../move_top/css/moveTop.css" type="text/css" rel="stylesheet" media="all">
+		<script src="../js/jquery-1.11.0.min.js"></script>
+		<!-- start-smoth-scrolling-->
+		<script type="text/javascript" src="../move_top/js/move-top_moveTop.js"></script>
+		<script type="text/javascript" src="../move_top/js/easing_moveTop.js"></script>
+		<!--//置顶必备-->
+
+		<!--copyright -->
+		<link rel="stylesheet" type="text/css" href="../copyright/css/copyright.css" />
+
+		<!--导航响应-->
+		<script src="../nav/js/nav.js"></script>
+		<!--//导航响应-->
+	</head>
+
+	<body style="overflow-x: hidden;background-image: linear-gradient(180deg, #8cb9f4, #fff);">
+		<div id="top">
+
+			<!--nav  -->
+
+			<nav class="navbar navbar-default">
+				<div class="container">
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right margin-top cl-effect-2">
+							<li>
+								<a href="../history/history.html"><span data-hover="历史回眸" style="font-weight: 500px;">历史回眸</span></a>
+							</li>
+							<li>
+								<a href="perspective.html"><span data-hover="丝路视角">丝路视角</span></a>
+							</li>
+							<li>
+								<a href="../achievement/achievement.html"><span data-hover="成果展示">成果展示</span></a>
+							</li>
+							<li style="background: none;width: 22%">&nbsp;
+								<div id="logo" onclick="window.open('../home/home.html','_self');" style="cursor: pointer;"></div>
+							</li>
+							<li>
+								<a href="../road/road.html"><span data-hover="在丝路上">在丝路上</span></a>
+							</li>
+							<li>
+								<a href="../country/country.html"><span data-hover="国别美图">国别美图</span></a>
+							</li>
+							<li>
+								<a href="../about/about.html"><span data-hover="关于我们">关于我们</span></a>
+							</li>
+						</ul>
+						<div class="clearfix"></div>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /container-fluid -->
+			</nav>
+			<!--//nav  -->
+
+		</div>
+		<!--//nav  -->
+
+		<!--cat  -->
+		<div class="TV">
+			<div class="middle">
+				<div class="playTV">
+					<div class="bj"></div>
+					<div id="tv" style="width: 100%;height: 100%;"><embed src="https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=k05020j1wq0&auto=0 
+
+" allowFullScreen="true" quality="high" width="100%" height="100%" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+					</div>
+
+					</video>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(document).ready(function() {
+				var signal = 0;
+				var flag = false;
+				$(".bj").on("mouseover", function() {
+					signal = 1;
+					if(!flag) {
+						flag = true;
+						signal = 1;
+						$(".bj").fadeOut(1000);
+						setTimeout(function() {
+							flag = false;
+							if(signal == 2) {
+								flag = true;
+								$(".bj").fadeIn(1000);
+								setTimeout(function() {
+									flag = false;
+								}, 1000);
+							}
+						}, 1000);
+					}
+
+				});
+				$(".bj").on("mouseout", function() {
+					signal = 2;
+				});
+				$('#tv').on('mouseout', function() {
+					signal = 2;
+					if(!flag) {
+						flag = true;
+						$(".bj").fadeIn(1000);
+						setTimeout(function() {
+							flag = false;
+							if(signal == 1) {
+								flag = true;
+								$(".bj").fadeOut(1000);
+								setTimeout(function() {
+									flag = false;
+								}, 1000);
+							}
+						}, 1000);
+					}
+
+				});
+			});
+		</script>
+		<!--//cat  -->
+
+		<!-- conten1 -->
+		<div class="services" id="services">
+			<div class="container">
+				<div class="services-grids">
+					<div class="col-md-4 services-grids-info sgi">
+						<h3 style="width: 300px;height: 70px;background-image: url(images/arrows.png);background-size: 300px 70px;line-height: 70px;text-align: center;">丝路访谈</h3>
+						<ul>
+							<li><i class="glyphicon glyphicon-arrow-right"> </i>
+								<a href="viewNews/viewNews1.html" >欧晓理谈共建“一带一路”。</a>
+							</li>
+							<li><i class="glyphicon glyphicon-arrow-right"> </i>
+								<a href="viewNews/viewNews2.html" >你好，一带一路你好，一带一路。</a>
+							</li>
+							<li><i class="glyphicon glyphicon-arrow-right"> </i>
+								<a href="viewNews/viewNews3.html" >《数说一带一路》数据背后的生意经。</a>
+							</li>
+							<li><i class="glyphicon glyphicon-arrow-right"> </i>
+								<a href="viewNews/viewNews4.html" >合作共赢：资金融通打通“一带一路”共建血脉。</a>
+							</li>
+							<li><i class="glyphicon glyphicon-arrow-right"> </i>
+								<a href="viewNews/viewNews5.html" >中巴经济走廊：雪山大洋飞渡 万里起宏图</a>
+							</li>
+							<li><i class="glyphicon glyphicon-arrow-right"> </i>
+								<a href="viewNews/viewNews6.html" >【数说香港】一带一路 联通内外</a>
+							</li>
+							<li><i class="glyphicon glyphicon-arrow-right"> </i>
+								<a href="viewNews/viewNews7.html" >中欧班列——构筑中欧贸易的＂黄金丝路＂</a>
+							</li>
+							<li><i class="glyphicon glyphicon-arrow-right"> </i>
+								<a href="viewNews/viewNews8.html" >思维导图之《“一带一路”建设海上合作设想》</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4 services-grids-info">
+						<img src="images/a1.jpg" alt="">
+						<h4>
+						<a href="viewNews/viewNews9.html" >亚投行之路（上） </a>
+					</h4>
+						<p>纪录片《亚投行之路》讲述的是亚洲基础设施投资银行诞生的前传故事，从筹建到成功开业，亚投行历经了38个月，1000多天。
+						</p>
+					</div>
+					<div class="col-md-4 services-grids-info">
+						<img src="images/a2.jpg" alt="">
+						<h4>
+						<a href="viewNews/viewNews10.html" >亚投行之路（下）</a>
+					</h4>
+						<p>亚洲基础设施投资银行（AIIB）是一个政府间性质的亚洲区域多边开发机构。截至2017年5月13日，亚投行有77个正式成员国。
+						</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<!--hover-grid-->
+		<div class="hover-grid">
+			<div class="container">
+				<h3 style="width: 300px;height: 70px;background-image: url(images/arrows.png);background-size: 300px 70px;line-height: 45px;text-align: center;">丝路展观</h3>
+				<ul class="grid cs-style-4">
+					<li>
+						<figure>
+							<div>
+								<img src="images/b1.jpg" alt="img04">
+							</div>
+							<figcaption>
+								<p style="font-size: 20px;margin-top: 100px;text-align: center;">中国与世界共赢</p>
+								<a href="viewNews/viewNews11.html"  style="text-decoration: none;font-size: 1.1em;">更多</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<div>
+								<img src="images/b2.jpg" alt="img06">
+							</div>
+							<figcaption>
+								<p style="font-size: 20px;margin-top: 100px;text-align: center;">创新推动新发展</p>
+								<a href="viewNews/viewNews12.html"  style="text-decoration: none;font-size: 1.1em;">更多</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<div>
+								<img src="images/b3.jpg" alt="img02">
+							</div>
+							<figcaption>
+								<p style="font-size: 20px;margin-top: 100px;text-align: center;">共享使人民幸福</p>
+								<a href="viewNews/viewNews13.html"  style="text-decoration: none;font-size: 1.1em;">更多</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<div>
+								<img src="images/b4.jpg" alt="img03">
+							</div>
+							<figcaption>
+								<p style="font-size: 20px;margin-top: 100px;text-align: center;">绿色点亮全世界</p>
+								<a href="viewNews/viewNews14.html"  style="text-decoration: none;font-size: 1.1em;">更多</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<div>
+								<img src="images/b5.jpg" alt="img01">
+							</div>
+							<figcaption>
+								<p style="font-size: 20px;margin-top: 100px;text-align: center;">携手合作促共赢</p>
+								<a href="viewNews/viewNews15.html"  style="text-decoration: none;font-size: 1.1em;">更多</a>
+							</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<div>
+								<img src="images/b6.jpg" alt="img05">
+							</div>
+							<figcaption>
+								<p style="font-size: 20px;margin-top: 100px;text-align: center;" style="text-decoration: none;">协调发展赢未来</p>
+								<a href="viewNews/viewNews16.html"  style="text-decoration: none;font-size: 1.1em;">更多</a>
+							</figcaption>
+						</figure>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--moveTop  -->
+		<!--//gallery-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				/*
+				var defaults = {
+					containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+				};
+				*/
+
+				$().UItoTop({
+					easingType: 'easeOutQuart'
+				});
+
+			});
+		</script>
+		<!--//smooth-scrolling-of-move-up
+	<!-- Bootstrap core JavaScript
+    ================================================== --->
+		<!-- Placed at the end of the document so the pages load faster-->
+		</script>
+
+		<!--//moveTop  -->
+		<!--copyright  -->
+		<div class="copyright">
+			<div class="copyright_main">
+				<div class="china_english">
+					<a href="perspective.html" style="color: yellow;margin: 10px;font-family: 'microsoft sans serif';text-decoration: none;">CHINA</a>/
+					<a href="perspective_e.html" style="font-family: 'microsoft sans serif';text-decoration: none;">ENGLISH</a>
+				</div>
+				<div class="copyright_left"></div>
+				<div class="copyright_right">Copyright © 2017 桂林理工大学. 版权所有.</div>
+			</div>
+		</div>
+	</body>
+
+</html>
