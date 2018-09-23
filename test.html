@@ -1,10 +1,45 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-	</head>
-	<body>
-		sdfsdfsdfsdf
-	</body>
+<head>
+<meta charset="utf-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<link href="css/component.css" rel="stylesheet">
+<title>音乐播放器</title>
+<style type="text/css">
+	@font-face {
+	font-family: "love";
+	src: url("fonts/love.ttf");
+}
+</style>
+</head>
+<body>
+	<a href="javascript:;" class="md-trigger btn btn-primary btn-sm" data-modal="modal-4" style="display: none;">弹出框</a>
+	<div class="md-modal md-effect-4" id="modal-4">
+    <div class="md-content">
+      <h3>前方高能</h3>
+      <div>
+        <ul>
+          <li><strong>one:</strong> 带上耳机效果更好</li>
+          <li><strong>two:</strong> 准备好你的小心脏</li>
+          <li><strong>three:</strong> 一切就绪后,点开始吧</li>
+        </ul>
+        <div class="md-close btn-sm btn-primary">开始</div>
+        <!--<button class="md-close btn-sm btn-primary">开始</button>-->
+      </div>
+    </div>
+  </div>
+	<script src="js/classie.js"></script>
+    <script src="js/modalEffects.js"></script>
+    <script type="text/javascript">
+    	setTimeout(function(){
+    		var modal = document.getElementById('modal-4')
+  	        classie.add( modal, 'md-show');
+    	},1000)
+    	
+    </script>
+	<audio id="music" src="music/promise.mp3"  loop="loop">你的浏览器不支持audio标签。</audio>    
+<a id="audio_btn"><img src="play.gif" width="48" height="50" id="music_btn" border="0"></a>    
+</body>
 </html>

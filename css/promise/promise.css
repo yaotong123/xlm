@@ -3,6 +3,7 @@
 	width: 700px;
 	margin: 100px auto;
 	font-family: "love";
+	opacity: 0;
 }
 /*粉色初识*/
 #pink{
@@ -136,7 +137,6 @@
 	background: url(../../images/promise/blue/blue5.png);
 	background-size: 130px 130px;
 	float: left;
-	opacity: 1;
 	background-repeat: no-repeat;
 	background-position:center 0; 
 	opacity: 0;
@@ -148,7 +148,6 @@
 	background: url(../../images/promise/blue/blue3.png);
 	background-size: 100%;
 	float: left;
-	opacity: 1;
 	background-repeat: no-repeat;
 	background-position:center 0; 
 	opacity: 0;
@@ -166,7 +165,6 @@
 	float: left;
 	font-size: 60px;
 	text-align: center;
-	opacity: 1;
 	-webkit-text-stroke: 1px #fff47c;
 	opacity: 0;
 }
@@ -194,9 +192,7 @@
 	background: url(../../images/promise/blue/blue1.png);
 	background-size: 100%;
 	float: left;
-	opacity: 1;
 	background-repeat: no-repeat;
-	background-position:center bottom; 
 	opacity: 0;
 }
 #blue_content{
@@ -245,5 +241,4 @@
 	width: 100%;
 	float: left;
 	text-align: center;
-	opacity: 0;
 }

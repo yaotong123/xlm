@@ -1,4 +1,5 @@
-/*粉色初识*/
+function promise_image(){
+	/*粉色初识*/
 	$('#pink_title').animatext({
 		speed: 300,
 		effect: 'flipInY',
@@ -82,41 +83,45 @@
 	 $('#blue_yt1').delay(56000)
 	  $('#blue_yt1').animate({
 	  	'opacity':'1'
-	  },8000)
+	  },3000)
 	  $('#blue_yt1_content').animatext({
 		speed: 300,
 		effect: 'flipInY',
 		reverse: false,
 		initDelay:59000
 	 });
-	 $('#blue_xlm1').delay(67000)
+	 $('#blue_xlm1').delay(61000)
 	  $('#blue_xlm1').animate({
 	  	'opacity':'1'
-	  },2000)
+	  },3000)
 	  $('#blue_content2').animatext({
 		speed: 300,
 		effect: 'flipInY',
 		reverse: false,
-		initDelay:68000
+		initDelay:64000
 	 });
-	 $('#blue_ytA').delay(70000)
-	  $('#blue_ytA').animate({
+	 
+	  setTimeout(function(){
+	  	$('#blue_ytA').animate({
+	  	'opacity':'0',
+	  },5000)
+	  	
+	  	$('#blue_xlm1').animate({
+	  	'opacity':'0',
+	  },5000)
+	  	
+	  	$('#blue_content2').animate({
 	  	'opacity':'0'
-	  },2000)
-	  $('#blue_xlm1').delay(70000)
-	  $('#blue_xlm1').animate({
-	  	'opacity':'0'
-	  },2000)
-	   $('#blue_content2').delay(70000)
-	  $('#blue_content2').animate({
-	  	'opacity':'0'
-	  },2000)
+	  },5000)
+	  	
+	  },66000)
+	  
 	  $('#blue_xlm2').delay(71000)
 	  $('#blue_xlm2').animate({
 	  	'opacity':'1'
-	  },8000)
+	  },5000)
 	  $('#blue_content4').animatext({
-		speed: 300,
+		speed: 500,
 		effect: 'flipInY',
 		reverse: false,
 		initDelay:73000
@@ -125,18 +130,32 @@
 	 $('#blue_yt2').delay(76000)
 	  $('#blue_yt2').animate({
 	  	'opacity':'1'
-	  },8000)
+	  },5000)
 	   $('#blue_content3').animatext({
-		speed: 300,
+		speed: 500,
 		effect: 'flipInY',
 		reverse: false,
 		initDelay:78000
+	 });
+	 $('#blue_content5').animatext({
+		speed: 300,
+		effect: 'flipInY',
+		reverse: false,
+		initDelay:83000
 	 });
 	 $('#blue_like').delay(86000)
 	  $('#blue_like').animate({
 	  	'opacity':'1'
 	  },8000)
-	/*//蓝色相约*/
+	  $('#blue').delay(93000)
+	  $('#blue').animate({
+	  	'opacity':'0'
+	  },150000)
+	  /*//蓝色相约*/
+	  
+}
+
+	
 	//	$("#pink_title").animatext();
 //	$("#pink_title").animatext({speed: 150,
 //		effect: 'flipInX',
