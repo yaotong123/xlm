@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
+<<<<<<< HEAD
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 
@@ -43,3 +44,27 @@
 <a id="audio_btn"><img src="play.gif" width="48" height="50" id="music_btn" border="0"></a>    
 </body>
 </html>
+=======
+<script type="text/javascript">
+       var audio = document.getElementById("promise");
+       audio.play()
+       setTimeout(function(){
+       },500)
+</script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<title>音乐播放器</title>
+</head>
+<body>
+	<audio id="music" src="music/promise.mp3"  loop="loop">你的浏览器不支持audio标签。</audio>    
+<a id="audio_btn"><img src="play.gif" width="48" height="50" id="music_btn" border="0"></a>    
+<script>    
+$("#audio_btn").click(function(){    
+    var music = document.getElementById("music");    
+    if(music.paused){    
+        music.play();    
+       }
+});    
+</script>  
+</body>
+</html>
+>>>>>>> 0c355105cfc726ce45c9e88626dd6538c05e7549
